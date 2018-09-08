@@ -1,0 +1,61 @@
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Mobile first mixins
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin screen-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin screen-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin screen-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin screen-custom($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// Desktop first mixins
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+@mixin screen-sm--max {
+  @media (max-width: #{$screen-sm-min + 1}) {
+    @content;
+  }
+}
+@mixin screen-md--max {
+  @media (max-width: #{$screen-md-min + 1}) {
+    @content;
+  }
+}
+@mixin screen-lg--max {
+  @media (max-width: #{$screen-lg-min + 1}) {
+    @content;
+  }
+}
+@mixin screen-xl--max {
+  @media (max-width: #{$screen-xl-min + 1}) {
+    @content;
+  }
+}
+
+@mixin screen-custom--max($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
