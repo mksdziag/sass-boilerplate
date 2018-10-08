@@ -1,3 +1,52 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // CButtons
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: inherit;
+  border: 1px solid $color-border;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  &--primary {
+    color: $btn-primary-label;
+    background-color: $btn-primary-bg;
+    border: 1px solid $color-primary-bg;
+  }
+  &--secondary {
+    color: $btn-secondary-label;
+    background-color: $btn-secondary-bg;
+    border: 1px solid $color-secondary-bg;
+  }
+  &--success {
+    color: $white;
+    background-color: $color-success;
+    border: 1px solid $color-success;
+  }
+  &--warning {
+    color: $white;
+    background-color: $color-warning;
+    border: 1px solid $color-warning;
+  }
+  &--error {
+    color: $white;
+    background-color: $color-error;
+    border: 1px solid $color-error;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+  }
+  &--large {
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+  }
+  &--rounded {
+    border-radius: 100px;
+  }
+  &--outlined {
+    background-color: transparent;
+  }
+}

@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -14,10 +15,10 @@ html {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
 }

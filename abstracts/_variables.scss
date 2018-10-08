@@ -3,25 +3,104 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-//  font variables
+//  Colors variables
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$color-primary: #254e70;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-bg: transparentize($color-primary, 0.2);
+
+$color-secondary: #368f8b;
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-secondary-bg: transparentize($color-secondary, 0.2);
+
+// shades - generated using chroma.js - 12 steps
+$black: #1d1d21;
+$gray-10: #2e2e31;
+$gray-6: #7b7a7d;
+$gray-4: #a5a5a6;
+$gray-3: #bbbbbc;
+$gray-2: #d1d0d2;
+$gray-1: #e8e7e8;
+$white: white;
+
+/* feedback */
+$color-success: #88c459;
+$color-error: #f5414f;
+$color-warning: #ffd137;
+
+/* typography */
+$color-text: $gray-10;
+$color-text-heading: $black;
+$color-text-subtle: $gray-6;
+$color-link: $color-primary;
+$color-link-visited: $color-primary-dark;
+$color-mark: $color-secondary-bg;
+$color-blockquote-border: $gray-2;
+
+/* border */
+$color-border: $gray-2;
+
+/* body */
+$color-body: $white;
+
+/* forms */
+$form-element-border: $color-border;
+$form-element-border-focus: $color-primary;
+$form-element-border-error: $color-error;
+$form-element-bg: $white;
+$form-text-placeholder: $gray-4;
+
+/* buttons */
+$btn-primary-bg: $color-primary;
+$btn-primary-hover: $color-primary-light;
+$btn-primary-active: $color-primary-dark;
+$btn-primary-label: $white;
+
+$btn-secondary-bg: $color-secondary;
+$btn-secondary-hover: $color-secondary-light;
+$btn-secondary-active: $color-secondary-dark;
+$btn-secondary-label: $white;
+
+/* icons */
+$color-icon-primary: $gray-4;
+$color-icon-secondary: inherit;
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//  font & text variables
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $font-primary: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial',
   sans-serif;
+$font-secondary: serif;
+
 $Font-monospace: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace;
 
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-//  Colors variables
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$color-primary: rgb(0, 91, 128);
-$color-secondary: rgb(231, 197, 0);
-$color-ternary: rgb(108, 0, 231);
+$text-base-size: 1.4rem;
 
-$text-dark: rgb(34, 34, 34);
-$text-dark-light: rgb(80, 80, 80);
-$text-white: rgb(34, 34, 34);
+$heading-line-height: 1.2;
+$body-line-height: 1.4;
 
-$color-white: rgb(255, 255, 255);
-$color-black: rgb(0, 0, 0);
+$text-xs: calc(1 * 100 / #{$text-base-size});
+$text-sm: calc(1.2 * 100 / #{$text-base-size});
+$text-md: #{$text-base-size};
+$text-lg: calc(1.25 * #{$text-base-size});
+$text-xl: calc(1.5 * #{$text-base-size});
+$text-xxl: calc(2.25 * #{$text-base-size});
+$text-xxxl: calc(3 * #{$text-base-size});
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//  Spacing variables
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$space-xxxs: 0.25rem;
+$space-xxs: 0.5rem;
+$space-xs: 0.75rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+$space-xxl: 6rem;
+$space-xxxl: 10rem;
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //  Utilities variables
